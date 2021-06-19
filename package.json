@@ -1,0 +1,16 @@
+{
+  "name": "lrc_editor_electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jude",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.2"
+  }
+}
