@@ -6,10 +6,12 @@
     "scripts": {
         "start": "electron .",
         "dev": "webpack serve --open",
-        "build": "webpack --mode production"
+        "build": "webpack --mode production",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
     },
     "keywords": [],
-    "author": "",
+    "author": "jude",
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.0.0",
@@ -21,6 +23,8 @@
         "babel-loader": "^8.0.2",
         "clean-webpack-plugin": "^4.0.0-alpha.0",
         "css-loader": "^5.2.6",
+        "electron": "^13.1.2",
+        "electron-builder": "^22.11.7",
         "html-webpack-plugin": "^5.3.1",
         "node-sass": "^6.0.0",
         "sass-loader": "^12.1.0",
@@ -38,7 +42,12 @@
         "mobx": "^6.3.2",
         "mobx-react": "^7.2.0",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "electron": "^13.1.2"
+        "react-dom": "^17.0.2"
+    },
+    "build": {
+      "appId": "me.judes.editor.lrc",
+      "mac": {
+        "category": "editor"
+      }
     }
 }
