@@ -8,7 +8,7 @@
         "dev": "webpack serve --open",
         "build": "webpack --mode production",
         "pack": "electron-builder --dir",
-        "dist": "electron-builder -w"
+        "dist": "electron-builder"
     },
     "keywords": [],
     "author": "jude",
