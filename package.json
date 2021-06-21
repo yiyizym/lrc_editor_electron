@@ -1,14 +1,14 @@
 {
     "name": "lrc_editor",
     "version": "1.3.0",
-    "description": "",
+    "description": "A lrc editor",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
         "dev": "webpack serve --open",
         "build": "webpack --mode production",
         "pack": "electron-builder --dir",
-        "dist": "electron-builder"
+        "dist": "electron-builder -w"
     },
     "keywords": [],
     "author": "jude",
@@ -47,7 +47,18 @@
     "build": {
       "appId": "me.judes.editor.lrc",
       "mac": {
-        "category": "editor"
+        "category": "editor",
+        "icon": "build/32x32.png"
+      },
+      "win": {
+        "target": "NSIS",
+        "icon": "build/32x32.png"
+      },
+      "linux": {
+        "target": [
+          "AppImage",
+          "deb"
+        ]
       }
     }
 }
